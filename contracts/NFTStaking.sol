@@ -136,7 +136,6 @@ contract NFTStaking is PausableUpgradeable, OwnableUpgradeable, UUPSUpgradeable,
             
                 _updateRewards(msg.sender);
 
-                Stake[] storage stakes = userStakes[msg.sender];
                 if (!stakes[_stakeIds[i]].isUnbonding) {
                     stakes[_stakeIds[i]].isUnbonding = true;
                     stakes[_stakeIds[i]].unbondingStartTime = uint64(block.timestamp);
