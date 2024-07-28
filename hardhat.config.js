@@ -4,16 +4,12 @@ require("@openzeppelin/hardhat-upgrades");
 require('hardhat-docgen');
 
 module.exports = {
-    defaultNetwork: "hardhat",
+    defaultNetwork: "polygonAmoy",
     networks: {
         hardhat: {},
-        polygon: {
-            url: "https://polygon-mainnet.g.alchemy.com/v2/zoNm-CgB1rQIn0DG1XG0hRHV0hgFW71X",
-            accounts: [process.env.PRIVATE_KEY]
-        },
         polygonAmoy: {
-            url: "https://polygon-amoy.g.alchemy.com/v2/zoNm-CgB1rQIn0DG1XG0hRHV0hgFW71X",
-            accounts: [process.env.PRIVATE_KEY]
+            url: "https://go.getblock.io/1610d463a7934fa68689ad18cd93cfdd",
+            accounts: [process.env.PRIVATE_KEY],
         },
     },
     etherscan: {

@@ -1,5 +1,5 @@
 // This will upgrade the contract to same proxy address.
-// deploy command : npx hardhat run --network polygon_amoy scripts/Upgrade/NFTStaking.js
+// deploy command : npx hardhat run --network polygonAmoy scripts/Upgrade/NFTStaking.js
 
 async function upgradeNFTStaking() {
 
